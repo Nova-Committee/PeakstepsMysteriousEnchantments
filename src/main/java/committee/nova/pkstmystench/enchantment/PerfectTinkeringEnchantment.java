@@ -16,7 +16,7 @@ public class PerfectTinkeringEnchantment extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 25 * level;
+        return 28 * level;
     }
 
     @Override

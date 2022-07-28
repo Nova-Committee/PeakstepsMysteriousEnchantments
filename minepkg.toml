@@ -1,0 +1,27 @@
+
+# Preview of the minepkg.toml format! Could break anytime!
+manifestVersion = 0
+
+[package]
+  type = "mod"
+  name = "peaksteps-mysterious-enchantments"
+  description = "Loads of interesting enchantments and curses await!"
+  version = "0.1.1-mc1.19"
+  platform = "fabric"
+  license = "MIT"
+  source = "https://github.com/Nova-Committee/PeakstepsMysteriousEnchantments"
+  author = "pkstDev"
+
+# These are global requirements
+[requirements]
+  minecraft = "~1.19"
+  fabricLoader = ">=0.14.6"
+
+[dependencies]
+  fabric = "*"
+
+[dev]
+  buildCommand = "./gradlew build"
+
+  [dev.dependencies]
+    test-mansion = "*"

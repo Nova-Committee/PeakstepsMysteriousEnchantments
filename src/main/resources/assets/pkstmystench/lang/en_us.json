@@ -9,5 +9,8 @@
   "enchantment.pkstmystench.crystal_wings.desc": "Makes chestplates behave like elytras.",
 
   "enchantment.pkstmystench.perfect_tinkering": "Perfect Tinkering",
-  "enchantment.pkstmystench.perfect_tinkering.desc": "Reduces the base damage of the weapon but deals extra damage on mobs based on durability and mining level. The lower the durability is / the higher the mining level is, the higher the damage is dealt."
+  "enchantment.pkstmystench.perfect_tinkering.desc": "Reduces the base damage of the weapon but deals extra damage on mobs based on durability and mining level. The lower the durability is / the higher the mining level is, the higher the damage is dealt.",
+
+  "enchantment.pkstmystench.weight_of_survival": "Weight of Survival",
+  "enchantment.pkstmystench.weight_of_survival.desc": "Deals extra damage on entities if the targets' health is higher than user's, deals damage to user otherwise."
 }

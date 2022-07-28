@@ -22,6 +22,15 @@ public class EventInit {
                 tableBuilder.pool(poolBuilder);
             }
         });
+        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+            if (source.isBuiltin() && LootTables.BURIED_TREASURE_CHEST.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .with(ItemEntry.builder(Items.ENCHANTED_BOOK).apply(
+                                EnchantRandomlyLootFunction.create().add(EnchantmentInit.WEIGHT_OF_SURVIVAL)
+                        ).weight(5));
+                tableBuilder.pool(poolBuilder);
+            }
+        });
         AttackEntityCallback.EVENT.register(AttackEntityEvent::onAttack);
     }
 }

@@ -10,6 +10,7 @@ public class EnchantmentInit {
     public static Enchantment PRE_SHARPENING = new PreSharpeningEnchantment();
     public static Enchantment CRYSTAL_WINGS = new CrystalWingsEnchantment();
     public static Enchantment PERFECT_TINKERING = new PerfectTinkeringEnchantment();
+    public static Enchantment WEIGHT_OF_SURVIVAL = new WeightOfSurvivalEnchantment();
 
     public static void registerAll() {
         Registry.register(Registry.ENCHANTMENT,
@@ -24,5 +25,8 @@ public class EnchantmentInit {
         Registry.register(Registry.ENCHANTMENT,
                 new Identifier(PeakstepsMysteriousEnchantments.MODID, "perfect_tinkering"),
                 PERFECT_TINKERING);
+        Registry.register(Registry.ENCHANTMENT,
+                new Identifier(PeakstepsMysteriousEnchantments.MODID, "weight_of_survival"),
+                WEIGHT_OF_SURVIVAL);
     }
 }

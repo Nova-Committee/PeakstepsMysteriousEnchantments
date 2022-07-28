@@ -22,13 +22,29 @@ public class AttackEntityEvent {
                 if (EnchantmentHelper.fromNbt(stack.getEnchantments()).containsKey(EnchantmentInit.PERFECT_TINKERING)) {
                     if (entity.isLiving()) {
                         entity.damage(DamageSource.player(player),
-                                (10f * (sword.getMaterial().getMiningLevel() + 1)) * ((Math.round(((float) stack.getDamage() / (float) stack.getMaxDamage()) * 100f)) / 100f));
-                        stack.damage(1, player.getRandom(), (ServerPlayerEntity) player);
+                                (15f + ((sword.getMaterial().getMiningLevel() + 1) * 3f)) * ((Math.round(((float) stack.getDamage() / (float) stack.getMaxDamage()) * 100f)) / 100f));
+                        stack.damage(calculateDamageForPerfectTinkering(stack), player.getRandom(), (ServerPlayerEntity) player);
                         return ActionResult.SUCCESS;
                     }
                 }
             }
         }
         return ActionResult.PASS;
+    }
+
+    private static int calculateDamageForPerfectTinkering(ItemStack stack) {
+        if ((float) stack.getDamage() / (float) stack.getMaxDamage() > 0) {
+            if ((float) stack.getDamage() / (float) stack.getMaxDamage() < 0.25f) {
+                return 2;
+            } else if ((float) stack.getDamage() / (float) stack.getMaxDamage() < 0.5f) {
+                return 3;
+            } else if ((float) stack.getDamage() / (float) stack.getMaxDamage() < 0.75f) {
+                return 5;
+            } else {
+                return 7;
+            }
+        } else {
+            return 1;
+        }
     }
 }
