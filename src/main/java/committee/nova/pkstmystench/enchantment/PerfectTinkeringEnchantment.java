@@ -8,7 +8,7 @@ import net.minecraft.entity.EquipmentSlot;
 public class PerfectTinkeringEnchantment extends Enchantment {
     public PerfectTinkeringEnchantment() {
         super(
-                Rarity.RARE,
+                Rarity.VERY_RARE,
                 EnchantmentTarget.WEAPON,
                 new EquipmentSlot[] {EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND}
         );
@@ -16,7 +16,12 @@ public class PerfectTinkeringEnchantment extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 20 * level;
+        return 25 * level;
+    }
+
+    @Override
+    public int getMaxPower(int level) {
+        return this.getMinPower(level) + 50;
     }
 
     @Override

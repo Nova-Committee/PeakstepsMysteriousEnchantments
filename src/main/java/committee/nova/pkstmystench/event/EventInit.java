@@ -2,6 +2,7 @@ package committee.nova.pkstmystench.event;
 
 import committee.nova.pkstmystench.enchantment.EnchantmentInit;
 import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents;
+import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
@@ -21,5 +22,6 @@ public class EventInit {
                 tableBuilder.pool(poolBuilder);
             }
         });
+        AttackEntityCallback.EVENT.register(AttackEntityEvent::onAttack);
     }
 }

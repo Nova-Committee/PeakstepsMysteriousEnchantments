@@ -7,6 +7,7 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.EntityHitResult;
@@ -22,6 +23,7 @@ public class AttackEntityEvent {
                     if (entity.isLiving()) {
                         entity.damage(DamageSource.player(player),
                                 (10f * (sword.getMaterial().getMiningLevel() + 1)) * ((Math.round(((float) stack.getDamage() / (float) stack.getMaxDamage()) * 100f)) / 100f));
+                        stack.damage(1, player.getRandom(), (ServerPlayerEntity) player);
                         return ActionResult.SUCCESS;
                     }
                 }
