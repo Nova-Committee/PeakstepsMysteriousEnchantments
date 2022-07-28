@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "pkstmystench",
+  "version": "${version}",
+
+  "name": "Peakstep's Mysterious Enchantments",
+  "description": "Loads of interesting enchantments and curses await!",
+  "authors": [
+    "pkstDev"
+  ],
+
+  "license": "MIT",
+  "icon": "assets/pkstmystench/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "committee.nova.pkstmystench.PeakstepsMysteriousEnchantments"
+    ]
+  },
+  "mixins": [
+    "pkstmystench.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}

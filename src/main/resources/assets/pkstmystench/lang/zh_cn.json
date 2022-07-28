@@ -1,0 +1,13 @@
+{
+  "enchantment.pkstmystench.rockcrash": "岩崩",
+  "enchantment.pkstmystench.rockcrash.desc": "从六格以上掉落至地面时，对附近实体造成伤害并破坏脚下方块。",
+
+  "enchantment.pkstmystench.pre_sharpening": "临阵磨枪",
+  "enchantment.pkstmystench.pre_sharpening.desc": "造成更高的伤害，同时不允许虚弱攻击（攻击冷却未结束时攻击）。",
+
+  "enchantment.pkstmystench.crystal_wings": "水晶之翼",
+  "enchantment.pkstmystench.crystal_wings.desc": "让胸甲表现得像鞘翅一样。",
+
+  "enchantment.pkstmystench.perfect_tinkering": "百炼成钢",
+  "enchantment.pkstmystench.perfect_tinkering.desc": "降低武器的基本伤害，但根据耐久度和挖掘等级对生物造成额外伤害。耐久度越低/挖掘等级越高，造成的伤害越高。"
+}

@@ -1,0 +1,13 @@
+{
+  "enchantment.pkstmystench.rockcrash": "Rockcrash",
+  "enchantment.pkstmystench.rockcrash.desc": "Damages nearby entities and breaks blocks after falling from a height of more than 6 blocks.",
+
+  "enchantment.pkstmystench.pre_sharpening": "Pre-Sharpening",
+  "enchantment.pkstmystench.pre_sharpening.desc": "Deals higher damage while disallowing weak attack.",
+
+  "enchantment.pkstmystench.crystal_wings": "Crystal Wings",
+  "enchantment.pkstmystench.crystal_wings.desc": "Makes chestplates behave like elytras.",
+
+  "enchantment.pkstmystench.perfect_tinkering": "Perfect Tinkering",
+  "enchantment.pkstmystench.perfect_tinkering.desc": "Reduces the base damage of the weapon but deals extra damage on mobs based on durability and mining level. The lower the durability is / the higher the mining level is, the higher the damage is dealt."
+}
