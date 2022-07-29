@@ -11,6 +11,7 @@ public class EnchantmentInit {
     public static Enchantment CRYSTAL_WINGS = new CrystalWingsEnchantment();
     public static Enchantment PERFECT_TINKERING = new PerfectTinkeringEnchantment();
     public static Enchantment WEIGHT_OF_SURVIVAL = new WeightOfSurvivalEnchantment();
+    public static Enchantment TIDE_FALLS_TIDE_RISES = new TideFallsTideRisesEnchantment();
 
     public static void registerAll() {
         Registry.register(Registry.ENCHANTMENT,
@@ -28,5 +29,8 @@ public class EnchantmentInit {
         Registry.register(Registry.ENCHANTMENT,
                 new Identifier(PeakstepsMysteriousEnchantments.MODID, "weight_of_survival"),
                 WEIGHT_OF_SURVIVAL);
+        Registry.register(Registry.ENCHANTMENT,
+                new Identifier(PeakstepsMysteriousEnchantments.MODID, "tide_falls_tide_rises"),
+                TIDE_FALLS_TIDE_RISES);
     }
 }

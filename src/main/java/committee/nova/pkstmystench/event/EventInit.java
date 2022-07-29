@@ -2,6 +2,7 @@ package committee.nova.pkstmystench.event;
 
 import committee.nova.pkstmystench.enchantment.EnchantmentInit;
 import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents;
+import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.item.Items;
@@ -27,10 +28,13 @@ public class EventInit {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .with(ItemEntry.builder(Items.ENCHANTED_BOOK).apply(
                                 EnchantRandomlyLootFunction.create().add(EnchantmentInit.WEIGHT_OF_SURVIVAL)
+                        ).weight(5)).with(ItemEntry.builder(Items.ENCHANTED_BOOK).apply(
+                                EnchantRandomlyLootFunction.create().add(EnchantmentInit.WEIGHT_OF_SURVIVAL)
                         ).weight(5));
                 tableBuilder.pool(poolBuilder);
             }
         });
         AttackEntityCallback.EVENT.register(AttackEntityEvent::onAttack);
+        ServerPlayerEvents.ALLOW_DEATH.register(PlayerDeathEvent::onDeath);
     }
 }

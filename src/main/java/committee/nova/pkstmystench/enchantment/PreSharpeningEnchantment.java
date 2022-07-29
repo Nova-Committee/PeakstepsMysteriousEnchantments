@@ -8,7 +8,7 @@ import net.minecraft.entity.EquipmentSlot;
 public class PreSharpeningEnchantment extends Enchantment {
     public PreSharpeningEnchantment() {
         super(
-                Rarity.UNCOMMON,
+                Rarity.RARE,
                 EnchantmentTarget.WEAPON,
                 new EquipmentSlot[] {EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND}
         );
@@ -16,7 +16,7 @@ public class PreSharpeningEnchantment extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 12 * level;
+        return 15 * level;
     }
 
     @Override

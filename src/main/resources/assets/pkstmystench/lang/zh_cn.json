@@ -12,5 +12,8 @@
   "enchantment.pkstmystench.perfect_tinkering.desc": "降低武器的基本伤害，但根据耐久度和挖掘等级对生物造成额外伤害。耐久度越低/挖掘等级越高，造成的伤害越高。",
 
   "enchantment.pkstmystench.weight_of_survival": "生存的重压",
-  "enchantment.pkstmystench.weight_of_survival.desc": "当目标生命比例比使用者生命比例大时对目标造成额外伤害，否则对使用者造成伤害。"
+  "enchantment.pkstmystench.weight_of_survival.desc": "当目标生命比例比使用者生命比例大时对目标造成额外伤害，否则对使用者造成伤害。",
+
+  "enchantment.pkstmystench.tide_falls_tide_rises": "潮落潮升",
+  "enchantment.pkstmystench.tide_falls_tide_rises.desc": "以物品的部分耐久（根据耐久上限和附魔等级决定）为代价，保护玩家免受死亡。"
 }

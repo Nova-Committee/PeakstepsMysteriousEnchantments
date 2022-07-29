@@ -2,15 +2,16 @@ package committee.nova.pkstmystench.enchantment;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
-import net.minecraft.entity.EntityGroup;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ItemStack;
 
-public class PerfectTinkeringEnchantment extends Enchantment {
-    public PerfectTinkeringEnchantment() {
+public class TideFallsTideRisesEnchantment extends Enchantment {
+    public TideFallsTideRisesEnchantment() {
         super(
                 Rarity.VERY_RARE,
-                EnchantmentTarget.WEAPON,
-                new EquipmentSlot[] {EquipmentSlot.MAINHAND, EquipmentSlot.OFFHAND}
+                EnchantmentTarget.ARMOR_CHEST,
+                new EquipmentSlot[] {EquipmentSlot.CHEST}
         );
     }
 
@@ -26,16 +27,21 @@ public class PerfectTinkeringEnchantment extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 1;
-    }
-
-    @Override
-    public float getAttackDamage(int level, EntityGroup group) {
-        return -2.0f;
+        return 3;
     }
 
     @Override
     public boolean isAvailableForEnchantedBookOffer() {
         return false;
+    }
+
+    @Override
+    public boolean isAvailableForRandomSelection() {
+        return false;
+    }
+
+    @Override
+    public boolean isTreasure() {
+        return true;
     }
 }
