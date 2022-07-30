@@ -1,0 +1,19 @@
+{
+  "enchantment.pkstmystench.rockcrash": "Крушитель",
+  "enchantment.pkstmystench.rockcrash.desc": "Наносит урон ближайшим сущностям и ломает блоки после падения с высоты более 6 блоков.",
+
+  "enchantment.pkstmystench.pre_sharpening": "Предварительная заточка",
+  "enchantment.pkstmystench.pre_sharpening.desc": "Наносит повышенный урон, одновременно запрещая слабые атаки.",
+
+  "enchantment.pkstmystench.crystal_wings": "Хрустальные крылья",
+  "enchantment.pkstmystench.crystal_wings.desc": "Заставляет нагрудник вести себя как элитры.",
+
+  "enchantment.pkstmystench.perfect_tinkering": "Безупречная работа",
+  "enchantment.pkstmystench.perfect_tinkering.desc": "Уменьшает базовый урон оружия, но при этом наносит дополнительный урон по мобам в зависимости от прочности и уровня добычи. Чем ниже прочность / выше уровень добычи, тем выше наносимый урон.",
+
+  "enchantment.pkstmystench.weight_of_survival": "Вес выживания",
+  "enchantment.pkstmystench.weight_of_survival.desc": "Наносит дополнительный урон сущностям, если здоровье сущности выше здоровья игрока, в противном случае наносит урон игроку.",
+
+  "enchantment.pkstmystench.tide_falls_tide_rises": "Прилив-отлив",
+  "enchantment.pkstmystench.tide_falls_tide_rises.desc": "Предотвращает смерть игрока, в то время как предмет теряет часть своей прочности в зависимости от максимальной прочности и уровня зачарования."
+}
